@@ -15,8 +15,6 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route index element ={<Home />} />
         <Route path="/about" element ={<About />} />
-        <Route path="/personal-portfolio" element ={<Layout />} />
-        <Route path="/personal-portfolio/personal-portfolio" element ={<Layout />} />
         <Route path="/projects" element ={<Projects />} />
         <Route path="/projects/connect-violet" element ={<ConnectViolet />} />
         <Route path="/projects/personal-portfolio" element ={<PersonalPortfolio />} />

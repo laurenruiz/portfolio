@@ -3,7 +3,7 @@ import AnimatedLetters from '../../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
-import YTVidSS from '../../../assets/images/yt-vid.png'
+import YTVidSS from '../../../assets/images/youtube_picture.png'
 import PortfolioSS from '../../../assets/images/portfolio.png'
 
 
