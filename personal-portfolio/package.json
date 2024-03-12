@@ -1,6 +1,6 @@
 {
   "name": "personal-portfolio",
-  "homepage": "https://laurenruiz.github.io/",
+  "homepage": "https://laurenruiz.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
