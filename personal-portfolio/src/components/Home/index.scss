@@ -39,14 +39,6 @@
             opacity: 0.6;
         }
 
-        img {
-            width: 32px;
-            margin-left: 20px;
-            opacity: 0;
-            height: auto;
-            animation: rotate 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
@@ -83,7 +75,7 @@
 .headshot {
     img{
         justify-content: center;
-        margin-top: calc(50% - 645px);
+        margin-top: 10%;
         margin-left: calc(50% + 270px);
         width: 25%;
         height: 25%;
