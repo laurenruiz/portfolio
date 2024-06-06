@@ -1,52 +1,64 @@
 .personal-port-page{
+    display: flex;
+    margin-left: 64px;
+    margin-top: 50px;
+    top: 5vh;
+    padding: 2vw;
+    text-align: left;
+    max-width: 80%;
+    height: 90vh;
+    box-sizing: border-box;
     .text-zone{
-        position: absolute;
-        left: 12%;
-        top: 50%;
-        transform:translateY(-50%);
-        width: fit-content;
-        margin-right: 100px;
+        margin-left: 64px;
+        position: relative;
+        flex-direction: column;
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+        align-items: center;
+        justify-content: center;
+
+        
+        //max-height: vh; /* Maximum height for the text zone */
+        //overflow-y: auto; /* Enable vertical scrolling */
 
         h1 {
-            font-size: 53px;
+            font-size: 3.5vw;
             font-family: 'Coolvetica';
             color: #f5a6b3;
             font-weight: 400;
             margin-top: 0;
             position: relative;
-            margin-bottom: 40px;
+            //margin-bottom: 40px;
 
-            left: 10px;
+            //left: 10px;
             &::before{
                 content: '<h1>';
                 font-family: 'La Belle Aurore';
-                font-size: 18px;
+                font-size: 2vw;
                 position: absolute;
-                margin-top: -10px;
-                left: -10px;
+                top: -1.5vw;
+                left: -1.25vw;
                 opacity: 0.6;
-                line-height: 18px;
+                //line-height: 18px;
             }
 
             &::after {
                 content: '<h1/>';
                 font-family: 'La Belle Aurore';
-                font-size: 18px;
-                line-height: 18px;
+                font-size: 2vw;
+                //line-height: 18px;
                 position: absolute;
-                left: -30px;
-                bottom: -20px;
-                margin-left: 20px;
+                left: -1.25vw;
+                bottom: -2vw;
+                //margin-left: 20px;
                 opacity: 0.6;
             }
         }
 
-        p {
-            text-align: center;
-            font-size: 16px;
+        h4 {
+            text-align: left;
+            font-size: 1.25vw;
             color: #fff;
             font-family: Georgia;
             font-weight: 500;
@@ -67,19 +79,14 @@
 
     .images{
         display: flex;
+        flex-direction: row;
+        //align-items: center;
+        justify-content: space-evenly;
 
         .project{
-            margin-left: 16%;
+            //margin-left: 40%;
             flex-direction: column;
-            animation: pulse 1s;
-            animation-delay: 1.4s;
-            img{
-            }
-        }
-
-        .links{
-            margin-left: 16%;
-            flex-direction: column;
+            text-align: center;
             animation: pulse 1s;
             animation-delay: 1.4s;
         }
@@ -90,10 +97,44 @@
             height: 250px;
         }
 
-        h2{
+        h3{
             font-family: Georgia;
             text-align: center;
-            margin-left: 42px;
+            font-size: 2vw;
+            color: white;
         }
     }
+}
+
+@media (max-width: 768px) {
+    .personal-port-page{
+        flex-direction: column;
+        margin-bottom: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: calc(90vh - 200px); /* Adjust height to end 100px before the bottom */
+        //align-items: center;
+        padding-bottom: 100px;
+        
+        .text-zone{
+            h4{
+                font-size: 3vw;
+            }
+        }
+
+        .images{
+            flex-direction: column;
+            margin-bottom: 100px;
+            align-items: center;
+
+            h3{
+                font-size: 4vw;
+            }
+            
+            margin-bottom: 100px;
+        }
+        
+    }
+    
+    
 }

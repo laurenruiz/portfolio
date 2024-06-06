@@ -35,7 +35,7 @@ const sendEmail = (e) => {
             <h1>
                 <AnimatedLetters
                 letterClass={letterClass}
-                strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                strArray={['Contact', 'me']}
                 idx={15}
                 />
             </h1>
@@ -51,16 +51,9 @@ const sendEmail = (e) => {
         <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
-                <li className="half">
+              <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
+                  <input placeholder="Email" type="email" name="email" required />
                 </li>
                 <li>
                   <input
@@ -78,7 +71,7 @@ const sendEmail = (e) => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="send-button" value="SEND" />
                 </li>
               </ul>
             </form>

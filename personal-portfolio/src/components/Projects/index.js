@@ -13,7 +13,7 @@ const Projects = () => {
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
-        }, 3000)
+        }, 6000)
     }, [])
 
     return (
@@ -23,8 +23,8 @@ const Projects = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's', '!']}
-                            idx={15}
+                            strArray={['My Projects and Experiences!']}
+                            idx={12}
                         />
                     </h1>
                     <div className='images'>
@@ -32,14 +32,14 @@ const Projects = () => {
                             <Link to="/projects/personal-portfolio">
                                 <img className="pics" src={PortfolioSS} alt="cv pic" />
                             </Link>
-                            <h2>Personal Portfolio!</h2>
+                            <h3>Personal Portfolio!</h3>
                         </div>
                         <div className='project'>
                             <Link to="/projects/connect-violet">
                                     <img className="pics" src={ConnectVioletSS} alt="portfolio pic" />
                             </Link>
                             <div className='title'>
-                                <h2>ConnectViolet!</h2>
+                                <h3>ConnectViolet!</h3>
                             </div>
                         </div>
                     </div>

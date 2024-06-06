@@ -22,30 +22,30 @@ const ConnectViolet = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['C', 'o', 'n', 'n', 'e', 'c', 't', 'V', 'i', 'o', 'l', 'e', 't']}
+                            strArray={['ConnectViolet']}
                             idx={15}
                         />
                     </h1>
-                    <p>
+                    <h4>
                         ConnectViolet is a website with an integrated personality test to help women in STEM majors on campus
                         find each other and build a community! I collaborated in a team of 3 to create this website using
                         Replit, HTML, and JavaScript. This project was started during Association of Women in Computing's 
                         2023 HackViolet Hackathon at Virginia Tech,
-                    </p>
+                    </h4>
                     <div className='images'>
                         <div className='project'>
                             <Link to="https://laurenruiz.github.io/connect-violet/" target="_blank">
                                     <img className="pics" src={ConnectVioletSS} alt="connect violet pic" />
                             </Link>
                             <div className='title'>
-                                <h2>ConnectViolet!</h2>
+                                <h3>ConnectViolet!</h3>
                             </div>
                         </div>
                         <div className='links'>
                             <Link to="https://main--hackviolet.netlify.app/" target="_blank">
                                 <img className="pics" src={HackViolet} alt="hack violet pic" />
                             </Link>
-                            <h2>HackViolet!</h2>
+                            <h3>HackViolet!</h3>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ import Myla from '../../assets/images/myla.jpg'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    
+    const aboutArray = ['About', 'Me']
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -23,7 +23,7 @@ const About = () => {
                     <h1>
                         <AnimatedLetters 
                         letterClass={letterClass}
-                        strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                        strArray={aboutArray}
                         idx={15}
                         />
                     </h1>
@@ -43,8 +43,10 @@ const About = () => {
                         day (current book: Atomic Habits by James Clear), and hitting the gym. I also
                         am a dog mom to a beautiful 1-year-old yorkie named Mimi!
                     </p>
-                    <img className="pics" src={Me} alt="me" />
-                    <img className="pics" src={Myla} alt="myla" />
+                    <div className='photos'>
+                        <img className="pics" src={Me} alt="me" />
+                        <img className="pics" src={Myla} alt="myla" />
+                    </div>
                 </div>
                 <div className='stage-cube-cont'>
                     <div className='cubespinner'>

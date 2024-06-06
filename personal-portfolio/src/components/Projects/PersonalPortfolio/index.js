@@ -13,7 +13,7 @@ const PersonalPortfolio = () => {
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
-        }, 3000)
+        }, 4500)
     }, [])
 
     return (
@@ -23,30 +23,30 @@ const PersonalPortfolio = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['P', 'e', 'r', 's', 'o', 'n', 'a', 'l', ' ', 'P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                            strArray={['Personal Portfolio']}
                             idx={15}
                         />
                     </h1>
-                    <p>
-                        Using these youtube videos, I was able to create this personal portfolio! This portfolio really
+                    <h4>
+                        Using this youtube video, I was able to create this personal portfolio! This portfolio really
                         helped me strengthened my knowledge and experience in React, and in HTML, CSS, and JavaScript.
                         It has also given me an opportunity to explore my creative side and my writing skills. I hope to
                         expand upon this portfolio by including other personal projects and class projects.
-                    </p>
+                    </h4>
                     <div className='images'>
                         <div className='project'>
                             <Link to="/">
                                     <img className="pics" src={PortfolioSS} alt="portfolio pic" />
                             </Link>
                             <div className='title'>
-                                <h2>Personal Portfolio!</h2>
+                                <h3>Personal Portfolio!</h3>
                             </div>
                         </div>
-                        <div className='links'>
+                        <div className='project'>
                             <Link to="https://www.youtube.com/watch?v=bmpI252DmiI" target="_blank">
                                 <img className="pics" src={YTVidSS} alt="yt vid pic" />
                             </Link>
-                            <h2>Video Tutorial Followed!</h2>
+                            <h3>Video Tutorial Followed!</h3>
                         </div>
                     </div>
                 </div>
