@@ -8,7 +8,7 @@
     padding: 1vw;
     text-align: left;
     //max-height: vh; /* Maximum height for the text zone */
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 .text-zone {
@@ -46,20 +46,19 @@ h1::after {
     font-size: 2vw; /* Relative unit */
     position: absolute;
     bottom: -2vw;
-    left: 0.5vw;
     opacity: 0.6;
 }
 
 h2 {
     color: #f3aca6;
     font-weight: 800;
-    margin: 64px;
+    // margin: 64px;
     font-size: 2vw; /* Relative unit */
     font-family: Georgia;
     letter-spacing: 0.05vw;
     margin-top: 0vw;
     margin-bottom: 4vw;
-    max-width: 100%; /* Ensure h2 does not exceed the container width */
+    max-width: 90%; /* Ensure h2 does not exceed the container width */
     word-wrap: break-word; /* Wrap the text if it exceeds the container width */
 }
 
@@ -81,7 +80,7 @@ h2 {
     display: inline-block;
     background-color: transparent; /* Ensure the background is transparent */
     white-space: nowrap;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .flat-button:hover {
@@ -95,9 +94,11 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-left: 5vw; /* Adjust the offset from the left */
-    width: 40%; /* Adjust the width of the container */
+    width: 35%; /* Adjust the width of the container */
     margin-top: 20vw; /* Add space above the picture */
     margin-bottom: 30vw; /* Add space below the picture */
+    padding-right: 7vw;
+
 }
 
 .headshot img {
@@ -136,11 +137,16 @@ h2 {
     .text-zone {
         order: 2;
         padding: 1vw;
-        max-width: 100%; /* Allow text zone to take full width on smaller screens */
+        max-width: 80%; /* Allow text zone to take full width on smaller screens */
+        padding-right: 10vw;
+        padding-bottom: calc(200px + 10vh);
+
     }
 
     h1 {
         font-size: 8vw; /* Adjust font-size for smaller screens */
+        max-width: 90%;
+        word-wrap: break-word;
     }
 
     h1::before, h1::after {
@@ -149,6 +155,9 @@ h2 {
 
     h2 {
         font-size: 5vw; /* Adjust font-size for smaller screens */
+        margin:64px;
+        margin-left: 2vw;
+        text-align: center;
     }
 
     .flat-button {
@@ -157,7 +166,7 @@ h2 {
         letter-spacing: 0.07vw;
         font-family: sans-serif;
         text-decoration: none;
-        margin: 64px;
+        margin: 0px;
         border: 0.8vw solid #f3aca6;
         margin-top: 0vw;
         padding-left: 1.25vw;

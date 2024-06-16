@@ -30,7 +30,7 @@ const ConnectViolet = () => {
                         ConnectViolet is a website with an integrated personality test to help women in STEM majors on campus
                         find each other and build a community! I collaborated in a team of 3 to create this website using
                         Replit, HTML, and JavaScript. This project was started during Association of Women in Computing's 
-                        2023 HackViolet Hackathon at Virginia Tech,
+                        2023 HackViolet Hackathon at Virginia Tech!
                     </h4>
                     <div className='images'>
                         <div className='project'>

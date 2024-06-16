@@ -5,7 +5,7 @@
     top: 5vh;
     padding: 2vw;
     text-align: left;
-    max-width: 80%;
+    max-width: 100%;
     height: 90vh;
     box-sizing: border-box;
     .text-zone{
@@ -25,7 +25,7 @@
         h1 {
             font-size: 3.5vw;
             font-family: 'Coolvetica';
-            color: #f5a6b3;
+            color: #fff;
             font-weight: 400;
             margin-top: 0;
             position: relative;
@@ -58,7 +58,7 @@
 
         h4 {
             text-align: left;
-            font-size: 1.25vw;
+            font-size: 1.75vw;
             color: #fff;
             font-family: Georgia;
             font-weight: 500;
@@ -73,7 +73,7 @@
 
     .text-animate-hover{
         &:hover {
-            color: #fff;
+            color: #f3aca6;
         }
     }
 
@@ -106,7 +106,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .connect-violet-page{
         flex-direction: column;
         margin-bottom: 100px;
@@ -117,8 +117,21 @@
         padding-bottom: 100px;
         
         .text-zone{
+            h1 {
+                text-align: left;
+                font-size: 10vw;
+                word-wrap: break-word;
+            }
+            h1::before{
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: 2.0vw;
+            }
+            h1::after {
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: -2.5vw;
+            }
             h4{
-                font-size: 3vw;
+                font-size: 4vw;
             }
         }
 

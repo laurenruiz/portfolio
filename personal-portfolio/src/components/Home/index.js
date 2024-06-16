@@ -40,6 +40,10 @@ const Home = () => {
                     </h1>
                     <h2>Rising Junior at Virginia Polytechnic State University and Institute</h2>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </div>
             </div>
             <Loader type="pacman" />

@@ -23,7 +23,7 @@ const PersonalPortfolio = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['Personal Portfolio']}
+                            strArray={['Personal', 'Portfolio']}
                             idx={15}
                         />
                     </h1>
